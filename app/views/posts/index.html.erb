@@ -1,0 +1,12 @@
+<h1>All Books</h1>
+<br>
+<% @posts.each do |post|%>
+    <h2><%= post.title%></h2>
+    
+    <div><%= post.author%></div>
+    <div><%= post.genre%></div>
+    <div><%= post.price%></div>
+    <div><%= post.publisheddate%></div>
+    <br>
+    <%= link_to "Show Details", post%>
+<%end%>
