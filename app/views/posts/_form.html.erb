@@ -6,13 +6,13 @@
     <%= f.text_field :author %> <br>
     <br>
     <%= f.label :genre %> <br>
-    <%= f.text_field :genre %> <br>
+    <%= f.select :genre, options_for_select([["Select One", ""], "Fiction", "Non-Fiction"]), :class => 'genForm_dropBox' %>
     <br>
     <%= f.label :price %> <br>
     <%= f.text_field :price %> <br>
     <br>
-    <%= f.label :publisheddate %> <br>
-    <%= f.text_field :publisheddate %> <br>
+    <%= f.label :"published-date" %> <br>
+    <%= f.select :publisheddate, options_for_select([["Select One", ""], 2000, 2001,2002,2003,2004]), :class => 'genForm_dropBox' %>
     <br>
     <%= f.submit %>
 <%end%>
